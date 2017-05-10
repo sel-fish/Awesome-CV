@@ -18,7 +18,12 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv}
+% \documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage[BoldFont,SlantFont,CJKchecksingle]{xeCJK}
+\setCJKmainfont[BoldFont=WenQuanYi Micro Hei Mono]{WenQuanYi Micro Hei Mono}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -53,17 +58,15 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
-\name{Byungjin}{Park}
-\position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
-\address{246-1002, Gwangmyeongmayrouge Apt. 86, Cheongna lime-ro, Seo-gu, Incheon-si, 404-180, Rep. of KOREA}
-
+\name{付}{秋雷}
+\vspace{6pt}
+% \position{   }
+% \position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
+% \address{246-1002, Gwangmyeongmayrouge Apt. 86, Cheongna lime-ro, Seo-gu, Incheon-si, 404-180, Rep. of KOREA}
 \mobile{(+86) 153-9713-9619 }
 \email{fqlgy@hotmail.com}
 \homepage{www.sel-fish.net}
 \stackoverflow{6171361}{sel-fish}
-% \extrainfo{extra informations}
-
-% \quote{``Be the change that you want to see in the world."}
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -75,8 +78,8 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
-  {Claud D. Park~~~·~~~Résumé}
+  {}
+  {Fuqiulei~~~·~~~Résumé}
   {\thepage}
 
 
@@ -84,14 +87,14 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{resume/summary.tex}
-\input{resume/experience.tex}
-\input{resume/honors.tex}
-\input{resume/presentation.tex}
-\input{resume/writing.tex}
-\input{resume/committees.tex}
 \input{resume/education.tex}
-\input{resume/extracurricular.tex}
+\input{resume/experience.tex}
+% \input{resume/summary.tex}
+% \input{resume/honors.tex}
+% \input{resume/presentation.tex}
+% \input{resume/writing.tex}
+% \input{resume/committees.tex}
+% \input{resume/extracurricular.tex}
 
 
 %-------------------------------------------------------------------------------
