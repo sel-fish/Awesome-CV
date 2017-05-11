@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Work Experience}
+\cvsection{工作经验}
 
 
 %-------------------------------------------------------------------------------
@@ -11,74 +11,46 @@
 
 %---------------------------------------------------------
   \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - PRESENT} % Date(s)
+    {资深开发工程师} % Job title
+    {蘑菇街} % Organization
+    {杭州} % Location
+    {2016.03 - 至今} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
+        \item {2017.01 - 2017.03 上线NoSQL服务。提供Mongodb、Cassandra线上服务，为业务提供更多的可能性；使用Ansible Playbook完成半自化集群部署；使用YCSB针对用户场景压测产出数据；开发监控程序汇报数据到内部监控产品。}
+        \item {2017.02 - 2017.03 主导Java应用容器方案。主导类Pandora应用容器方案设计和Demo实现展示，为解决应用Jar包冲突和中间件自动升级打下了基础。}
+        \item {2016.10 - 2016.12 ZooKeeper管理系统开发。结合现有开源ZooKeeper管理系统TaoKeeper和Exibitor的优势，使用Spring MVC + Angularjs开发，提供节点状态展示、数据查看、 配置对比等功能。结合ZooKeeper源码解决维护过程中的问题。}
+        \item {2016.09 - 2016.10 引入Redis Sentinel实现用户系统缓存HA。基于业务系统使用现状调研Redis HA方案，通过评审，指导业务方改动落地；上线之后进行容灾演练并优化配置；将单点故障对业务的影响时间从数十分钟降低到10s}
+        \item {2016.07 - 2016.09 分布式产品自动化容灾测试。引入Jepsen分布式容灾测试框架，暴露了一些之前测试方法很难暴露的问题，降低了容灾测试的成本；有效测试出了内部分布式Redis产品扩容过程中会产生一致性问题的风险；利用Docker Machine在本机搭建分布式环境，提高测试效率。}
+        \item {2016.04 - 2016.06 基于HDFS Erasure Code实现交易快照冷数据存储方案。交易快照冷热数据分离的一部分，在使用Erasure Code的HDFS集群之上搭建HBase，提供冷数据服务，有效地将存储成本降低了25\%；使用工具将Mysql中的数据导出到Hbase集群中；解决应用批量查询Rt过长的问题。}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
+    {资深开发工程师} % Job title
+    {阿里巴巴} % Organization
+    {杭州} % Location
+    {2012.04 - 2015.12} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
-        \item {Implemented a distributed web stress test tool with high anonymity.}
-        \item {Implemented a military cooperation system which is web based real time messenger in Scala on Lift.}
+        \item {2014.06 - 2015.12 Tair多机房建设。规划各集群规模，协调资源落地；制定多集群归并方案并实施，大大降低了新机房集群搭建的成本；推动自动化运维方案落地，集群部署和空间申请自动化上线，制定节点上下线自动化方案；完善多机房情况下监控及其它应用操作界面的展示和使用；推动持久化数据在多机房间自动化迁移}
+        \item {2014.08 - 2015.05 内部应用云化。内部应用云化旨在使内部应用尽量只使用阿里云的产品完成业务逻辑，在业务流量变化的情况下提供更高的弹性，复用云产品的功能。比如像访问开发缓存服务（OCS）一样访问缓存服务，具体内容包括：对现有服务进行治理、规范使用，提供丰富的访问权限隔离，细化监控数据和流控的粒度，在系统层面对应用进行更加灵活的控制。在资源不足的情况下，承担其他模块开发，推动方案中关键功能的实现，完成交易链路重要应用的缓存访问云化。}
+        \item {2013.12 - 2014.07 Tair持久化服务稳定性。优化容灾方案提高系统在单点风险（程序Bug、网络抖动、单机故障）的情况下系统的可用性，将出现单点故障时系统不可用的时间由数分钟降低为8s以内；分析系统慢请求处理逻辑，通过快速失败无效处理请求、分离慢请求处理线程、区分各接口在流控处理中的权重等方法，消除服务的不稳定风险。利用python dpkt模块和tcpdump，结合Tair协议，开发热点识别工具，在秒级识别热点key内容并输出相关内容。}
+        \item {2013.05 - 2013.11 Tair复杂数据持久化功能开发。使用LevelDB作为持久化引擎，利用LevelDB中key的排序功能支持Zset/Hashmap/List/Set等复杂数据结构的存储。相对于Redis的优点是：写入实时持久化；提供多备份功能；支持多集群间数据同步；应用访问的数据在内存中不命中时，可以实时从磁盘中访问。主导方案讨论，原型实现，实现Zset/Hashmap完整功能推动上线使用。}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Game Developer Intern at Global Internship Program} % Job title
-    {NEXON} % Organization
-    {Seoul, S.Korea \& LA, U.S.A} % Location
-    {Jan. 2013 - Feb. 2013} % Date(s)
+    {实习生} % Job title
+    {微软亚洲搜索技术中心} % Organization
+    {北京} % Location
+    {2011.07 - 2011.09} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed in Cocos2d-x an action puzzle game(Dragon Buster) targeting U.S. market.}
-        \item {Implemented API server which is communicating with game client and In-App Store, along with two other team members who wrote the game logic and designed game graphics.}
-        \item {Won the 2nd prize in final evaluation.}
+        \item {开发工具综合索引数据和用户点击数据进行处理，在多级粒度上对站点行为进行评估建模；利用建模结果中索引覆盖率等相关指标对索引进行诊断，并从中得到对搜索结果排序的信号；用近似方法判断页面是否是新闻页面}
       \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer} % Job title
-    {ShitOne Corp. (Start-up company)} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer.}
-        \item {Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Freelance Penetration Tester} % Job title
-    {SAMSUNG Electronics} % Organization
-    {S.Korea} % Location
-    {Sep. 2013, Mar. 2011 - Oct. 2011} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Conducted penetration testing on SAMSUNG KNOX, which is solution for enterprise mobile security.}
-        \item {Conducted penetration testing on SAMSUNG Smart TV.}
-      \end{cvitems}
-      %\begin{cvsubentries}
-      %  \cvsubentry{}{KNOX(Solution for Enterprise Mobile Security) Penetration Testing}{Sep. 2013}{}
-      %  \cvsubentry{}{Smart TV Penetration Testing}{Mar. 2011 - Oct. 2011}{}
-      %\end{cvsubentries}
     }
 
 %---------------------------------------------------------
